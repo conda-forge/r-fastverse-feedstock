@@ -1,7 +1,7 @@
 About r-fastverse
 =================
 
-Home: https://sebkrantz.github.io/fastverse/, https://github.com/SebKrantz/fastverse
+Home: https://fastverse.github.io/fastverse/, https://github.com/fastverse/fastverse
 
 Package license: GPL-3.0-only
 
