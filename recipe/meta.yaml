@@ -1,4 +1,4 @@
-{% set version = '0.2.3' %}
+{% set version = "0.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fastverse_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fastverse/fastverse_{{ version }}.tar.gz
-  sha256: 473c4c7ddb0277906d39f729a5d1057af64b66468a8a2ba782f1a7d06fa4e9ca
+  sha256: c09f39f3fca51190fbddbbc020ed9bbc12fe634c15b053e1224b14bd9d87df1e
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -51,19 +51,12 @@ test:
 about:
   home: https://sebkrantz.github.io/fastverse/, https://github.com/SebKrantz/fastverse
   license: GPL-3.0-only
-  summary: 'Easy installation, loading and management, of a complementary set of high-performance
-    packages for statistical computing and data manipulation. The core ''fastverse''
-    consists of 6 packages: ''data.table'', ''collapse'', ''matrixStats'', ''kit'',
-    ''magrittr'' and ''fst'', that jointly only depend on ''Rcpp''. These packages are
-    attached and harmonized through the ''fastverse''. In addition, the ''fastverse''
-    can be freely and permanently extended with additional packages, both globally or
-    for individual projects. Entirely separate package verses can also be created. Selected
-    fast and low-dependency packages are suggested for various topics such as time series,
-    dates and times, strings, spatial data, statistics and data serialization (see GitHub
-    / website).'
+  summary: "Easy installation, loading and management, of a complementary set of high-performance packages for statistical computing and data manipulation. The core 'fastverse' consists of 6 packages: 'data.table', 'collapse', 'matrixStats', 'kit', 'magrittr' and 'fst', that jointly only depend on 'Rcpp'. These packages\
+    \ are attached and harmonized through the 'fastverse'. In addition, the 'fastverse' can be freely and permanently extended with additional packages, both globally or for individual projects. Entirely separate package verses can also be created. Selected fast and low-dependency packages are suggested for various topics\
+    \ such as time series, dates and times, strings, spatial data, statistics and data serialization (see GitHub / website)."
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
