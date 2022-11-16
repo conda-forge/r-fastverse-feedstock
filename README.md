@@ -7,7 +7,16 @@ Package license: GPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fastverse-feedstock/blob/main/LICENSE.txt)
 
-Summary: Easy installation, loading and management, of a complementary set of high-performance packages for statistical computing and data manipulation. The core 'fastverse' consists of 6 packages: 'data.table', 'collapse', 'matrixStats', 'kit', 'magrittr' and 'fst', that jointly only depend on 'Rcpp'. These packages are attached and harmonized through the 'fastverse'. In addition, the 'fastverse' can be freely and permanently extended with additional packages, both globally or for individual projects. Entirely separate package verses can also be created. Selected fast and low-dependency packages are suggested for various topics such as time series, dates and times, strings, spatial data, statistics and data serialization (see GitHub / website).
+Summary: Easy installation, loading and management, of high-performance packages 
+         for statistical computing and data manipulation in R. 
+         The core 'fastverse' consists of 4 packages: 'data.table', 'collapse', 
+         'kit' and 'magrittr', that jointly only depend on 'Rcpp'. 
+         The 'fastverse' can be freely and permanently extended with 
+         additional packages, both globally or for individual projects. 
+         Separate package verses can also be created. Fast packages 
+         for many common tasks such as time series, dates and times, strings, 
+         spatial data, statistics, data serialization, larger-than-memory 
+         processing, and compilation of R code are listed in the [README](https://github.com/fastverse/fastverse#suggested-extensions).
 
 Current build status
 ====================
