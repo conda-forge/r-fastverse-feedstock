@@ -1,11 +1,22 @@
+About r-fastverse-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fastverse-feedstock/blob/main/LICENSE.txt)
+
 About r-fastverse
-=================
+-----------------
 
 Home: https://sebkrantz.github.io/fastverse/, https://github.com/SebKrantz/fastverse
 
 Package license: GPL-3.0-only
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fastverse-feedstock/blob/main/LICENSE.txt)
+Summary: Easy installation, loading and management, of a complementary set of high-performance packages for statistical computing and data manipulation. The core 'fastverse' consists of 6 packages: 'data.table', 'collapse', 'matrixStats', 'kit', 'magrittr' and 'fst', that jointly only depend on 'Rcpp'. These packages are attached and harmonized through the 'fastverse'. In addition, the 'fastverse' can be freely and permanently extended with additional packages, both globally or for individual projects. Entirely separate package verses can also be created. Selected fast and low-dependency packages are suggested for various topics such as time series, dates and times, strings, spatial data, statistics and data serialization (see GitHub / website).
+About r-fastverse
+-----------------
+
+Home: https://sebkrantz.github.io/fastverse/, https://github.com/SebKrantz/fastverse
+
+Package license: GPL-3.0-only
 
 Summary: Easy installation, loading and management, of a complementary set of high-performance packages for statistical computing and data manipulation. The core 'fastverse' consists of 6 packages: 'data.table', 'collapse', 'matrixStats', 'kit', 'magrittr' and 'fst', that jointly only depend on 'Rcpp'. These packages are attached and harmonized through the 'fastverse'. In addition, the 'fastverse' can be freely and permanently extended with additional packages, both globally or for individual projects. Entirely separate package verses can also be created. Selected fast and low-dependency packages are suggested for various topics such as time series, dates and times, strings, spatial data, statistics and data serialization (see GitHub / website).
 
@@ -27,13 +38,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16290&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-fastverse-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16290&branchName=main">
@@ -41,10 +45,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.1</td>
+              <td>linux_64_r_base4.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16290&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-fastverse-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-fastverse-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -52,6 +56,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16290&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-fastverse-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16290&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-fastverse-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
