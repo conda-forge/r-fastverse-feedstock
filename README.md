@@ -3,6 +3,7 @@ About r-fastverse-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fastverse-feedstock/blob/main/LICENSE.txt)
 
+
 About r-fastverse
 -----------------
 
@@ -11,6 +12,7 @@ Home: https://sebkrantz.github.io/fastverse/, https://github.com/SebKrantz/fastv
 Package license: GPL-3.0-only
 
 Summary: Easy installation, loading and management, of a complementary set of high-performance packages for statistical computing and data manipulation. The core 'fastverse' consists of 6 packages: 'data.table', 'collapse', 'matrixStats', 'kit', 'magrittr' and 'fst', that jointly only depend on 'Rcpp'. These packages are attached and harmonized through the 'fastverse'. In addition, the 'fastverse' can be freely and permanently extended with additional packages, both globally or for individual projects. Entirely separate package verses can also be created. Selected fast and low-dependency packages are suggested for various topics such as time series, dates and times, strings, spatial data, statistics and data serialization (see GitHub / website).
+
 About r-fastverse
 -----------------
 
