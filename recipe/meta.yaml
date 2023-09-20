@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fastverse_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fastverse/fastverse_{{ version }}.tar.gz
-  sha256: 10cac29096c4f2e1b915cafaffb2553339e0f2accaafa96e076fbfc5fede4fc4
+  sha256: 201bd185af082c5db6f0657c54d261cc5632eedd2eb0ed1fcfd026e77e226782
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -51,9 +51,9 @@ test:
 about:
   home: https://sebkrantz.github.io/fastverse/, https://github.com/SebKrantz/fastverse
   license: GPL-3.0-only
-  summary: "Easy installation, loading and management, of a complementary set of high-performance packages for statistical computing and data manipulation. The core 'fastverse' consists of 6 packages: 'data.table', 'collapse', 'matrixStats', 'kit', 'magrittr' and 'fst', that jointly only depend on 'Rcpp'. These packages\
-    \ are attached and harmonized through the 'fastverse'. In addition, the 'fastverse' can be freely and permanently extended with additional packages, both globally or for individual projects. Entirely separate package verses can also be created. Selected fast and low-dependency packages are suggested for various topics\
-    \ such as time series, dates and times, strings, spatial data, statistics and data serialization (see GitHub / website)."
+  summary: "Easy installation, loading and management, of a complementary set of high-performance packages for statistical computing and data manipulation. The core 'fastverse' consists of 6 packages: 'data.table', 'collapse', 'matrixStats', 'kit', 'magrittr' and 'fst', that jointly only depend on 'Rcpp'. These packages
+    are attached and harmonized through the 'fastverse'. In addition, the 'fastverse' can be freely and permanently extended with additional packages, both globally or for individual projects. Entirely separate package verses can also be created. Selected fast and low-dependency packages are suggested for various topics
+    such as time series, dates and times, strings, spatial data, statistics and data serialization (see GitHub / website)."
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
