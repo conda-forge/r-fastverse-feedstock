@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fastverse_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fastverse/fastverse_{{ version }}.tar.gz
-  sha256: 201bd185af082c5db6f0657c54d261cc5632eedd2eb0ed1fcfd026e77e226782
+  sha256: cb4eac0ec73af5a4d2ae1c7467919610110aa0b2bee2631b31a5f3ae347f4c0e
 
 build:
   merge_build_host: true  # [win]
@@ -22,7 +22,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}          # [not win]
+    - {{ stdlib("c") }}            # [not win]
     - {{ compiler('m2w64_c') }}    # [win]
+    - {{ stdlib("m2w64_c") }}      # [win]
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
