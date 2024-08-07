@@ -1,6 +1,5 @@
 {% set version = "0.3.3" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-fastverse
@@ -13,8 +12,7 @@ source:
   sha256: cb4eac0ec73af5a4d2ae1c7467919610110aa0b2bee2631b31a5f3ae347f4c0e
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,7 +35,6 @@ requirements:
     - r-matrixstats
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-collapse
     - r-data.table
     - r-fst
